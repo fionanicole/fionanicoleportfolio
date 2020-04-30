@@ -1,5 +1,5 @@
 body {
-  background-color: pink;
+  background-color: #254da8;
   background-image: url("ispytest1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -33,14 +33,6 @@ a:hover {
 
 
 /* For Button Containers---------------------------------------------------------------------------------------------------------------- */
-
-.glowObjects{
-  width:100vw;
-  height:100vh;
-}
-
-
-
 
 
 
@@ -84,14 +76,21 @@ a:hover {
 #modalInteriorVideogame{
   display:none;
   background-color: #fefefe;
+  width: 80%;
   margin: auto;
   border: 1px solid #888;
   z-index: 1;
-  width:75%
-  height:75%
-  overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.world{
+  width:400px;
+  height:400px;
+}
+.JSON{
+  width:700px;
+  height:550px;
 }
 
 #modalInteriorPaintbrush{
