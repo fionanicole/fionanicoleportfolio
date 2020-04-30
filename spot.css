@@ -5,6 +5,7 @@ body {
   background-repeat: no-repeat;
 }
 
+/* For my github website------------------------------------------------------------------------------------------------------------- */
 .mainText {
   color: #FF5C99;
   display: flex;
@@ -30,22 +31,27 @@ a:hover {
   color: white;
 }
 
-@media only screen and (max-width: 768px) {
 
-  /* For mobile phones: Galaxy S5, iPhone X, and iPhone 6/7/8 Portrait modes */
-  [class*="col-"] {
-    width: 100%;
-  }
+/* For Button Containers---------------------------------------------------------------------------------------------------------------- */
+
+.glowObjects{
+  width:100vw;
+  height:100vh;
 }
 
-.temporaryButtonAlign{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
-  justify-content: space-around;
-}
 
+
+
+
+
+
+
+
+
+
+
+
+/* For Modal Popups------------------------------------------------------------------------------------------------------------------- */
 #openModalCamera{
   display: flex;
 }
@@ -194,12 +200,21 @@ a:hover {
   cursor: pointer;
 }
 
-
-
-
-
 /* -------------------------------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: Galaxy S5, iPhone X, and iPhone 6/7/8 Portrait modes */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
 
+.temporaryButtonAlign{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: space-around;
+}
 /* Source:https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
 .col-1 {
   width: 8.33%;
