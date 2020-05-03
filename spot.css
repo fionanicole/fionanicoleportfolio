@@ -1,8 +1,21 @@
 body {
   background-color: #254da8;
-  background-image: url("ispytest1.jpg");
+  background-image: url("ispy_background.png");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+img{
+  width:inherit;
+  height:inherit;
+}
+
+.containObjects{
+  width:100vw;
+  height:100vh;
+  float:left;
+  z-index: -1;
+  position:fixed;
 }
 
 /* For my github website------------------------------------------------------------------------------------------------------------- */
@@ -12,7 +25,7 @@ body {
   font-size: 50px;
   justify-content: center;
   align-content: center;
-  /* margin:25% */
+  z-index: 1;
 }
 
 .mainText:hover {
@@ -33,7 +46,6 @@ a:hover {
 
 
 /* For Button Containers---------------------------------------------------------------------------------------------------------------- */
-
 
 
 
@@ -82,13 +94,32 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.decorativeSpacers{
+  background-color: pinks;
+  margin:20px;
+  width:75vw;
+  height:20px;
+}
+
+iframe{
+  width:inherit;
+  height: inherit;
+  overflow:hidden;
+}
+
 .world{
   width:400px;
   height:400px;
 }
 .JSON{
-  width:700px;
-  height:550px;
+  overflow: hidden;
+  width:600px;
+  height:600px;
+}
+.sunset{
+  position:relative;
+  width:600px;
+  height:500px;
 }
 
 #modalInteriorPaintbrush{
