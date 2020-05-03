@@ -5,9 +5,11 @@ body {
   background-repeat: no-repeat;
 }
 
+
 img{
   width:inherit;
   height:inherit;
+  transform: translate(-0.75%,0%);
 }
 
 .containObjects{
