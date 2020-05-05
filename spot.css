@@ -109,6 +109,11 @@ iframe{
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.videoClips{
+  width:inherit;
+  height:600px;
+}
+
 #modalInteriorVideogame{
   display:none;
   background-color: #fefefe;
