@@ -35,30 +35,33 @@ body {
 
 /* For Button Containers---------------------------------------------------------------------------------------------------------------- */
 .cameraButton {
+  display:flex;
   background-color: rgba(0, 0, 0, 0);
   border: none;
   width: 220px;
   height: 220px;
   z-index: 3;
-  /* transform:translate(220px,430px); */
+  transform:translate(220px,430px);
 }
 
 .cameraButton:hover {
+  display:flex;
   background: url("camera-button.svg") no-repeat;
   border: none;
   width: 220px;
   height: 220px;
   z-index: 3;
-  /* transform:translate(220px,430px); */
+  transform:translate(220px,430px);
 }
 
 .gameButton {
+  display:flex;
   background-color: rgba(0, 0, 0, 0);
   border: none;
   width: 250px;
   height: 250px;
   z-index: 4;
-  /* transform:translate(290px,20px); */
+  transform:translate(290px,20px);
 }
 
 .gameButton:hover {
@@ -67,7 +70,7 @@ body {
   width: 250px;
   height: 250px;
   z-index: 4;
-  /* transform:translate(290px,20px); */
+  transform:translate(290px,20px);
 }
 
 .paintbrushButton {
@@ -76,7 +79,7 @@ body {
   width: 250px;
   height: 250px;
   z-index: 5;
-  /* transform: translate(580px,-260px); */
+  transform: translate(685px,-260px);
 }
 
 .paintbrushButton:hover {
@@ -85,7 +88,7 @@ body {
   width: 250px;
   height: 250px;
   z-index: 5;
-  /* transform: translate(570px,-260px); */
+  transform: translate(685px,-260px);
 }
 
 .diceButton {
@@ -94,7 +97,7 @@ body {
   width: 100px;
   height: 60px;
   z-index: 6;
-  /* transform: translate(360px, -100px); */
+  transform: translate(0px, -1000px);
 }
 
 .diceButton:hover {
@@ -103,25 +106,25 @@ body {
   width: 100px;
   height: 60px;
   z-index: 6;
-  /* transform: translate(360px, -100px); */
+  transform: translate(360px, -100px);
 }
 
 .keyboardButton {
   background-color: rgba(0, 0, 0, 0);
   border: none;
-  width: 200px;
-  height: 200px;
+  width: 500px;
+  height: 500px;
   z-index: 7;
-  /* transform: translate(360px, -300px); */
+  transform: translate(570px, -120px);
 }
 
 .keyboardButton:hover {
   background: url("keyboard-button.svg") no-repeat;
   border: none;
-  width: 200px;
-  height: 200px;
+  width: 500px;
+  height: 500px;
   z-index: 7;
-  /* transform: translate(360px, -300px); */
+  transform: translate(570px, -130px);
 }
 
 .orangeButton {
@@ -130,7 +133,7 @@ body {
   width: 200px;
   height: 200px;
   z-index: 8;
-  /* transform: translate(360px, -300px); */
+  transform: translate(360px, -300px);
 }
 
 .orangeButton:hover {
@@ -139,7 +142,7 @@ body {
   width: 200px;
   height: 200px;
   z-index: 8;
-  /* transform: translate(360px, -300px); */
+  transform: translate(360px, -300px);
 }
 
 /* Sidenavigator Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav */
