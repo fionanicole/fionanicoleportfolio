@@ -296,10 +296,15 @@ iframe{
 /* Customize Modal Container ---------------------------------------------*/
 /* https://getbootstrap.com/docs/4.1/components/modal/ */
 .modal-content{
-  background-color: rgba(0,0,0,0.75);
+  background-color: rgba(0,0,0,0.8);
   color:white;
   justify-content: center;
   text-align: center;
 }
 
-.modal-header
+.modal-header{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  color:#66b5ff;
+  text-align: center;
+}
