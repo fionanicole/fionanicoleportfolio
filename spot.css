@@ -3,6 +3,7 @@ body {
   background-image: url("ispy_finished2.png");
   background-size: cover;
   background-repeat: no-repeat;
+  position: fixed;
 }
 
 .containObjects{
@@ -23,23 +24,6 @@ body {
   align-content: center;
   z-index: 1;
 }
-
-.mainText:hover {
-  color: white;
-}
-
-a:link {
-  color: #FF5C99;
-}
-
-a:visited {
-  color: #FF5C99;
-}
-
-a:hover {
-  color: white;
-}
-
 
 /* For Button Containers---------------------------------------------------------------------------------------------------------------- */
 
@@ -153,20 +137,15 @@ a:hover {
   background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
 }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
+.sidenav p {
   text-decoration: none;
   font-size: 25px;
   color: #818181;
   display: block;
   transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
+  height:100vh;
 }
 
 .sidenav .closebtn {
@@ -177,10 +156,6 @@ a:hover {
   margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 
 /* Customize Modal Container ---------------------------------------------*/
 /* https://getbootstrap.com/docs/4.1/components/modal/ */
