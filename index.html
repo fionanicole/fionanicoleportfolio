@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="spot.css">
+  <link rel="stylesheet" type="text/css" href="sidebar.css">
   <script language="JavaScript" src="spy.js"></script>
-  <script language="JavaScript" src="popup.js"></script>
+  <script language="JavaScript" src="sidebar.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
 </head>
@@ -15,7 +16,7 @@
 <body>
 
   <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="javascript:void(0)" class="closebtn">&times;</a>
     <h1 href="#" class='mainText col-4'><a href="https://github.com/fionanicole/fionanicoleportfolio"> @fionanicole </a></h1>
     <ul href ="#">
       <li href="#">canon videocamera</li>
@@ -27,7 +28,7 @@
     </ul>
   </div>
 
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <span id="mySideNav" style="font-size:30px;cursor:pointer">&#9776;</span>
 
   <!-- Create button that redirects to modal -->
 
@@ -43,19 +44,21 @@
 
   <div id="modalInteriorCamera">
     <button id="closeModalCamera">X</button>
+    <div>
     <h1 class="modalHeader">Video and Film Work</h1>
+  </div>
     <div class="decorativeSpacers"></div>
 
-    <!-- <iframe class="videoClips" src="https://www.youtube.com/embed/c7G3kvEPfLA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="videoClips" src="https://www.youtube.com/embed/c7G3kvEPfLA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div class="decorativeSpacers"></div>
     <iframe class="videoClips" src="https://www.youtube.com/embed/hJVP_htrRsI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <div class="modalWritingBoxes">This is a video video yeah!</div> -->
+    <div class="modalWritingBoxes">This is a video video yeah!</div>
   </div>
 
   <div id="modalInteriorVideogame">
     <button id="closeModalVideogame">X</button>
     <div>
-      <!-- <iframe class="world" src="https://editor.p5js.org/fiona-nicole/embed/77gb63Lhp"></iframe>
+      <iframe class="world" src="https://editor.p5js.org/fiona-nicole/embed/77gb63Lhp"></iframe>
       <p>This is the Earth. Created in P5JS as part of Creative Coding @ NYUIDM</p>
     </div>
     <div class="decorativeSpacers"></div>
@@ -66,7 +69,7 @@
     <div>
       <img class="sunset" src="sunset.gif"></img>
     </div>
-    <div class="decorativeSpacers"></div> -->
+    <div class="decorativeSpacers"></div>
   </div>
 
   </div>
@@ -83,9 +86,9 @@
 
   <div id="modalInteriorKeyboard">
     <button id="closeModalKeyboard">X</button>
-    <!-- <p>Content In Modal Keyboard</p>
+    <p>Content In Modal Keyboard</p>
     <iframe class="objectmed" src="https://fionanicole.github.io/web-nyu-idm/object-meditation/"></iframe>
-    <iframe class="objectmed" src="https://fionanicole.github.io/cori-vera/Cori_Vera-Fionas_first_visual_novel/"></iframe> -->
+    <iframe class="objectmed" src="https://fionanicole.github.io/cori-vera/Cori_Vera-Fionas_first_visual_novel/"></iframe>
   </div>
 
   <div id="modalInteriorOrange">

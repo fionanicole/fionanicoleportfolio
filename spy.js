@@ -44,15 +44,15 @@ function displayContentCamera(){
   var modalInteriorLayout = document.getElementById("modalInteriorCamera");
   var closeTheModal = document.getElementById("closeModalCamera");
   openTheModal.style.display="none";
-  modalInteriorLayout.style.display="flex";
-  closeTheModal.style.display="flex";
+  modalInteriorLayout.style.display="block";
+  closeTheModal.style.display="block";
 }
 
 function hideContentCamera(){
   var openTheModal = document.getElementById("openModalCamera");
   var modalInteriorLayout = document.getElementById("modalInteriorCamera")
   var closeTheModal = document.getElementById("closeModalCamera");
-  openTheModal.style.display="flex";
+  openTheModal.style.display="block";
   modalInteriorLayout.style.display="none";
   closeTheModal.style.display="none";
 }
@@ -63,15 +63,15 @@ function displayContentVideogame(){
   var modalInteriorLayout = document.getElementById("modalInteriorVideogame");
   var closeTheModal = document.getElementById("closeModalVideogame");
   openTheModal.style.display="none";
-  modalInteriorLayout.style.display="flex";
-  closeTheModal.style.display="flex";
+  modalInteriorLayout.style.display="block";
+  closeTheModal.style.display="block";
 }
 
 function hideContentVideogame(){
   var openTheModal = document.getElementById("openModalVideogame");
   var modalInteriorLayout = document.getElementById("modalInteriorVideogame")
   var closeTheModal = document.getElementById("closeModalVideogame");
-  openTheModal.style.display="flex";
+  openTheModal.style.display="block";
   modalInteriorLayout.style.display="none";
   closeTheModal.style.display="none";
 }
@@ -82,15 +82,15 @@ function displayContentPaintbrush(){
   var modalInteriorLayout = document.getElementById("modalInteriorPaintbrush");
   var closeTheModal = document.getElementById("closeModalPaintbrush");
   openTheModal.style.display="none";
-  modalInteriorLayout.style.display="flex";
-  closeTheModal.style.display="flex";
+  modalInteriorLayout.style.display="block";
+  closeTheModal.style.display="block";
 }
 
 function hideContentPaintbrush(){
   var openTheModal = document.getElementById("openModalPaintbrush");
   var modalInteriorLayout = document.getElementById("modalInteriorPaintbrush")
   var closeTheModal = document.getElementById("closeModalPaintbrush");
-  openTheModal.style.display="flex";
+  openTheModal.style.display="block";
   modalInteriorLayout.style.display="none";
   closeTheModal.style.display="none";
 }
@@ -101,15 +101,15 @@ function displayContentDice(){
   var modalInteriorLayout = document.getElementById("modalInteriorDice");
   var closeTheModal = document.getElementById("closeModalDice");
   openTheModal.style.display="none";
-  modalInteriorLayout.style.display="flex";
-  closeTheModal.style.display="flex";
+  modalInteriorLayout.style.display="block";
+  closeTheModal.style.display="block";
 }
 
 function hideContentDice(){
   var openTheModal = document.getElementById("openModalDice");
   var modalInteriorLayout = document.getElementById("modalInteriorDice")
   var closeTheModal = document.getElementById("closeModalDice");
-  openTheModal.style.display="flex";
+  openTheModal.style.display="block";
   modalInteriorLayout.style.display="none";
   closeTheModal.style.display="none";
 }
@@ -120,15 +120,15 @@ function displayContentKeyboard(){
   var modalInteriorLayout = document.getElementById("modalInteriorKeyboard");
   var closeTheModal = document.getElementById("closeModalKeyboard");
   openTheModal.style.display="none";
-  modalInteriorLayout.style.display="flex";
-  closeTheModal.style.display="flex";
+  modalInteriorLayout.style.display="block";
+  closeTheModal.style.display="block";
 }
 
 function hideContentKeyboard(){
   var openTheModal = document.getElementById("openModalKeyboard");
   var modalInteriorLayout = document.getElementById("modalInteriorKeyboard")
   var closeTheModal = document.getElementById("closeModalKeyboard");
-  openTheModal.style.display="flex";
+  openTheModal.style.display="block";
   modalInteriorLayout.style.display="none";
   closeTheModal.style.display="none";
 }
@@ -139,15 +139,15 @@ function displayContentOrange(){
   var modalInteriorLayout = document.getElementById("modalInteriorOrange");
   var closeTheModal = document.getElementById("closeModalOrange");
   openTheModal.style.display="none";
-  modalInteriorLayout.style.display="flex";
-  closeTheModal.style.display="flex";
+  modalInteriorLayout.style.display="block";
+  closeTheModal.style.display="block";
 }
 
 function hideContentOrange(){
   var openTheModal = document.getElementById("openModalOrange");
   var modalInteriorLayout = document.getElementById("modalInteriorOrange")
   var closeTheModal = document.getElementById("closeModalOrange");
-  openTheModal.style.display="flex";
+  openTheModal.style.display="block";
   modalInteriorLayout.style.display="none";
   closeTheModal.style.display="none";
 }

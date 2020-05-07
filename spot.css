@@ -44,7 +44,6 @@ a:hover {
 /* For Button Containers---------------------------------------------------------------------------------------------------------------- */
 
 #openModalCamera{
-  display: flex;
 }
 .cameraButton{
   background-color: rgba(0, 0, 0, 0);
@@ -60,7 +59,6 @@ a:hover {
 }
 
 #openModalVideogame{
-  display: flex;
 }
 .gameButton{
   background-color: rgba(0, 0, 0, 0);
@@ -76,7 +74,6 @@ a:hover {
 }
 
 #openModalPaintbrush{
-  display: flex;
 }
 .paintbrushButton{
   background-color: rgba(0, 0, 0, 0);
@@ -92,7 +89,6 @@ a:hover {
 }
 
 #openModalDice{
-  display: flex;
 }
 .diceButton{
   background-color: rgba(0, 0, 0, 0);
@@ -108,7 +104,6 @@ a:hover {
 }
 
 #openModalKeyboard{
-  display: flex;
 }
 .keyboardButton{
   background-color: rgba(0, 0, 0, 0);
@@ -124,7 +119,6 @@ a:hover {
 }
 
 #openModalOrange{
-  display: flex;
 }
 .orangeButton{
   background-color: rgba(0, 0, 0, 0);
@@ -172,17 +166,20 @@ iframe{
 #modalInteriorCamera{
   display:none;
   background-color: #fefefe;
-  width: 80%;
   margin: auto;
   border: 1px solid #888;
-  z-index: 1;
+  width: 80%;
+  height:auto;
+  float:left top;
+  overflow:auto;
+  z-index: 2;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
 }
 
 .videoClips{
-  width:inherit;
-  height:600px;
+  width:1080px;
+  height:720px;
 }
 
 #modalInteriorVideogame{
@@ -191,7 +188,7 @@ iframe{
   width: 80%;
   margin: auto;
   border: 1px solid #888;
-  z-index: 1;
+  z-index: 2;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -217,7 +214,7 @@ iframe{
   width: 80%;
   margin: auto;
   border: 1px solid #888;
-  z-index: 1;
+  z-index: 2;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -227,7 +224,7 @@ iframe{
   width: 80%;
   margin: auto;
   border: 1px solid #888;
-  z-index: 1;
+  z-index: 2;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -235,10 +232,10 @@ iframe{
 #modalInteriorKeyboard{
   display:none;
   background-color: #fefefe;
-  width: 80%;
+  width: 90%;
   margin: auto;
   border: 1px solid #888;
-  z-index: 1;
+  z-index: 2;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -254,7 +251,7 @@ iframe{
   width: 80%;
   margin: auto;
   border: 1px solid #888;
-  z-index: 1;
+  z-index: 2;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -296,12 +293,6 @@ iframe{
   font-size: 28px;
   font-weight: bold;
 }
-
-#closeModalCamera:hover,
-#closeModalVideogame:hover,
-#closeModalPaintbrush:hover,
-#closeModalDice:hover,
-#closeModalKeyboard:hover,
 
 #closeModalCamera:focus {
   color: #000;
@@ -395,60 +386,4 @@ iframe{
 
 .col-12 {
   width: 100%;
-}
-
-/* iSpy Menu */
-/* Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav */
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #0f1f3d;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav h1{
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-color: #f1f1f1;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav ul{
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #f1f1f1;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav li{
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #f1f1f1;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav h1 {font-size: 18px;}
 }
