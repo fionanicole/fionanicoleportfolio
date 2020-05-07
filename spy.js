@@ -39,7 +39,6 @@ $(document).ready(function(){
   });
 });
 
-
 // Tabs on both sides
 
 function openNav() {

@@ -29,13 +29,12 @@
   </div>
 
   <!-- Source for scaling techniquehttps://css-tricks.com/scaled-proportional-blocks-with-css-and-javascript/ -->
-  <div class="scaleable-wrapper" id="scaleable-wrapper">
+  <!-- <div class="scaleable-wrapper" id="scaleable-wrapper"> -->
     <!-- MAJOR Source: https://getbootstrap.com/docs/4.1/components/modal/ -->
-
     <!-- CAMERA ______________________________________________________________________________________________________________________ -->
-    <div class="container">
+    <div class="container allbutton">
       <!-- Trigger the modal with a button -->
-      <button type="button" class="btn btn-info btn-lg cameraButton" id="cameraModal"></button>
+      <button type="button" class="btn btn-info btn-lg cameraButton allbutton" id="cameraModal"></button>
 
       <!-- Modal -->
       <div class="modal fade" id="myCameraModal" role="dialog">
@@ -67,9 +66,9 @@
       </div>
 
       <!-- VIDEOGAME ____________________________________________________________________________________________________________-->
-      <div class="container">
+      <div class="container allbutton" >
         <!-- Trigger the modal with a button -->
-        <button type="button" class="btn btn-info btn-lg gameButton" id="videogameModal"></button>
+        <button type="button" class="btn btn-info btn-lg gameButton allbutton" id="videogameModal"></button>
         <!-- Modal -->
         <div class="modal fade" id="myVideogameModal" role="dialog">
           <div class="modal-dialog modal-xl">
@@ -107,9 +106,9 @@
 
 
       <!-- PAINTBRUSH-_____________________________________________________________________________________________________________ -->
-      <div class="container">
+      <div class="container allbutton">
         <!-- Trigger the modal with a button -->
-        <button type="button" class="btn btn-info btn-lg paintbrushButton" id="paintbrushModal"></button>
+        <button type="button" class="btn btn-info btn-lg paintbrushButton allbutton" id="paintbrushModal"></button>
 
         <!-- Modal -->
         <div class="modal fade" id="myPaintbrushModal" role="dialog">
@@ -139,10 +138,34 @@
           </div>
         </div>
 
-        <!-- DICE ________________________________________________________________________________________________________________________ -->
-        <div class="container">
+        <!-- ORANGE ____________________________________________________________________________________________________________________ -->
+        <div class="container allbutton">
           <!-- Trigger the modal with a button -->
-          <button type="button" class="btn btn-info btn-lg diceButton" id="diceModal"></button>
+          <button type="button" class="btn btn-info btn-lg orangeButton allbutton" id="orangeModal"></button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myOrangeModal" role="dialog">
+            <div class="modal-dialog modal-xl">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">More About Me!</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        <!-- DICE ________________________________________________________________________________________________________________________ -->
+        <div class="container allbutton">
+          <!-- Trigger the modal with a button -->
+          <button type="button" class="btn btn-info btn-lg diceButton allbutton" id="diceModal"></button>
 
           <!-- Modal -->
           <div class="modal fade" id="myDiceModal" role="dialog">
@@ -164,10 +187,9 @@
             </div>
 
             <!-- KEYBOARD _____________________________________________________________________________________________________________________ -->
-            <div class="container">
+            <div class="container allbutton">
               <!-- Trigger the modal with a button -->
-              <button type="button" class="btn btn-info btn-lg keyboardButton" id="keyboardModal"></button>
-
+              <button type="button" class="btn btn-info btn-lg keyboardButton allbutton" id="keyboardModal"></button>
               <!-- Modal -->
               <div class="modal fade" id="myKeyboardModal" role="dialog">
                 <div class="modal-dialog modal-xl">
@@ -179,31 +201,9 @@
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
-                    <iframe class="objectmed" src="https://fionanicole.github.io/web-nyu-idm/object-meditation/"></iframe>
-                    <iframe class="objectmed" src="https://fionanicole.github.io/cori-vera/Cori_Vera-Fionas_first_visual_novel/"></iframe>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- ORANGE ____________________________________________________________________________________________________________________ -->
-              <div class="container">
-                <!-- Trigger the modal with a button -->
-                <button type="button" class="btn btn-info btn-lg orangeButton" id="orangeModal"></button>
-
-                <!-- Modal -->
-                <div class="modal fade" id="myOrangeModal" role="dialog">
-                  <div class="modal-dialog modal-xl">
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h4 class="modal-title">More About Me!</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
+                    <div class="modal-body">
+                      <iframe class="objectmed" src="https://fionanicole.github.io/web-nyu-idm/object-meditation/"></iframe>
+                      <iframe class="objectmed" src="https://fionanicole.github.io/cori-vera/Cori_Vera-Fionas_first_visual_novel/"></iframe>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                       </div>
@@ -211,14 +211,14 @@
                   </div>
                 </div>
 
-                <script src="spy.js"></script>
 
+                <script src="spy.js"></script>
                 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
                 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
               </div>
 
-            </div>
+        </div>
 
 </body>
 

@@ -15,6 +15,14 @@ body {
   transform: translate(-0.75%,0%);
 } */
 
+.allbutton {
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  justify-content: space-between;
+  flex-flow: row;
+}
+
 /* For my github website------------------------------------------------------------------------------------------------------------- */
 .mainText {
   color: #FF5C99;
@@ -26,103 +34,121 @@ body {
 }
 
 /* For Button Containers---------------------------------------------------------------------------------------------------------------- */
-
-
-.cameraButton{
+.cameraButton {
   background-color: rgba(0, 0, 0, 0);
-  border:none;
-  width:220px;
-  height:220px;
-  transform:translate(220px,430px);
-
-}
-.cameraButton:hover{
-  background:url("camera-button.svg") no-repeat;
-  border:none;
-  width:220px;
-  height:220px;
-  transform:translate(220px,430px);
+  border: none;
+  width: 220px;
+  height: 220px;
+  z-index: 3;
+  /* transform:translate(220px,430px); */
 }
 
-.gameButton{
+.cameraButton:hover {
+  background: url("camera-button.svg") no-repeat;
+  border: none;
+  width: 220px;
+  height: 220px;
+  z-index: 3;
+  /* transform:translate(220px,430px); */
+}
+
+.gameButton {
   background-color: rgba(0, 0, 0, 0);
-  border:none;
-  width:250px;
-  height:250px;
-  transform:translate(290px,20px);
-}
-.gameButton:hover{
-  background:url("game-button.svg") no-repeat;
-  border:none;
-  width:250px;
-  height:250px;
-  transform:translate(290px,20px);
+  border: none;
+  width: 250px;
+  height: 250px;
+  z-index: 4;
+  /* transform:translate(290px,20px); */
 }
 
-.paintbrushButton{
-  background-color: rgba(0, 0, 0, 0);
-  border:none;
-  width:250px;
-  height:250px;
-  transform: translate(580px,-260px);
-}
-.paintbrushButton:hover{
-  background:url("paintbrush-button.svg") no-repeat;
-  border:none;
-  width:250px;
-  height:250px;
-  transform: translate(570px,-260px);
+.gameButton:hover {
+  background: url("game-button.svg") no-repeat;
+  border: none;
+  width: 250px;
+  height: 250px;
+  z-index: 4;
+  /* transform:translate(290px,20px); */
 }
 
-.diceButton{
+.paintbrushButton {
   background-color: rgba(0, 0, 0, 0);
-  border:none;
-  width:100px;
-  height:60px;
-  transform: translate(360px, -100px);
-}
-.diceButton:hover{
-  background:url("dice-button.svg") no-repeat;
-  border:none;
-  width:100px;
-  height:60px;
-  transform: translate(360px, -100px);
+  border: none;
+  width: 250px;
+  height: 250px;
+  z-index: 5;
+  /* transform: translate(580px,-260px); */
 }
 
-.keyboardButton{
-  background-color: rgba(0, 0, 0, 0);
-  border:none;
-  width:200px;
-  height:200px;
-  transform: translate(360px, -300px);
-}
-.keyboardButton:hover{
-  background:url("keyboard-button.svg") no-repeat;
-  border:none;
-  width:200px;
-  height:200px;
-  transform: translate(360px, -300px);
+.paintbrushButton:hover {
+  background: url("paintbrush-button.svg") no-repeat;
+  border: none;
+  width: 250px;
+  height: 250px;
+  z-index: 5;
+  /* transform: translate(570px,-260px); */
 }
 
-.orangeButton{
+.diceButton {
   background-color: rgba(0, 0, 0, 0);
-  border:none;
-  width:80px;
-  height:40px;
+  border: none;
+  width: 100px;
+  height: 60px;
+  z-index: 6;
+  /* transform: translate(360px, -100px); */
 }
-.orangeButton:hover{
-  background:url("orange-button.svg") no-repeat;
-  border:none;
-  width:80px;
-  height:40px;
+
+.diceButton:hover {
+  background: url("dice-button.svg") no-repeat;
+  border: none;
+  width: 100px;
+  height: 60px;
+  z-index: 6;
+  /* transform: translate(360px, -100px); */
+}
+
+.keyboardButton {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  width: 200px;
+  height: 200px;
+  z-index: 7;
+  /* transform: translate(360px, -300px); */
+}
+
+.keyboardButton:hover {
+  background: url("keyboard-button.svg") no-repeat;
+  border: none;
+  width: 200px;
+  height: 200px;
+  z-index: 7;
+  /* transform: translate(360px, -300px); */
+}
+
+.orangeButton {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  width: 200px;
+  height: 200px;
+  z-index: 8;
+  /* transform: translate(360px, -300px); */
+}
+
+.orangeButton:hover {
+  background: url("orange-button.svg") no-repeat;
+  border: none;
+  width: 200px;
+  height: 200px;
+  z-index: 8;
+  /* transform: translate(360px, -300px); */
 }
 
 /* Sidenavigator Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav */
-.dashed{
-  font-size:45px;
-  cursor:pointer;
+.dashed {
+  font-size: 45px;
+  cursor: pointer;
   float: left;
 }
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -142,9 +168,9 @@ body {
   color: #818181;
   display: block;
   transition: 0.3s;
-  height:100vh;
+  height: 100vh;
   overflow-y: hidden;
-  margin:20px;
+  margin: 20px;
 }
 
 .sidenav .closebtn {
@@ -155,10 +181,11 @@ body {
   margin-left: 50px;
 }
 
-.dashed2{
-  font-size:45px;
-  cursor:pointer;
-  float:right;
+.dashed2 {
+  font-size: 45px;
+  cursor: pointer;
+  float: right;
+  transform: translate(1050px);
 }
 
 .sidenav2 {
@@ -180,9 +207,9 @@ body {
   color: #818181;
   display: block;
   transition: 0.3s;
-  height:100vh;
+  height: 100vh;
   overflow-y: hidden;
-  margin:20px;
+  margin: 20px;
 }
 
 .sidenav2 .closebtn {
@@ -192,10 +219,6 @@ body {
   font-size: 45px;
   margin-left: 50px;
 }
-
-
-
-
 
 /* Customize Modal Container ---------------------------------------------*/
 /* https://getbootstrap.com/docs/4.1/components/modal/ */
