@@ -43,53 +43,51 @@ a:hover {
 
 /* For Button Containers---------------------------------------------------------------------------------------------------------------- */
 
-#openModalCamera{
-}
+
 .cameraButton{
   background-color: rgba(0, 0, 0, 0);
   border:none;
-  width:80px;
-  height:40px;
+  width:220px;
+  height:220px;
+  transform:translate(220px,430px);
+
 }
 .cameraButton:hover{
   background:url("camera-button.svg") no-repeat;
   border:none;
-  width:80px;
-  height:40px;
+  width:220px;
+  height:220px;
+  transform:translate(220px,430px);
 }
 
-#openModalVideogame{
-}
 .gameButton{
   background-color: rgba(0, 0, 0, 0);
   border:none;
-  width:80px;
-  height:40px;
+  width:250px;
+  height:250px;
+  transform:translate(290px,20px);
 }
 .gameButton:hover{
   background:url("game-button.svg") no-repeat;
   border:none;
-  width:80px;
-  height:40px;
+  width:250px;
+  height:250px;
+  transform:translate(290px,20px);
 }
 
-#openModalPaintbrush{
-}
 .paintbrushButton{
   background-color: rgba(0, 0, 0, 0);
   border:none;
-  width:80px;
-  height:40px;
+  width:200px;
+  height:200px;
 }
 .paintbrushButton:hover{
   background:url("paintbrush-button.svg") no-repeat;
   border:none;
-  width:80px;
-  height:40px;
+  width:300px;
+  height:300px;
 }
 
-#openModalDice{
-}
 .diceButton{
   background-color: rgba(0, 0, 0, 0);
   border:none;
@@ -103,8 +101,6 @@ a:hover {
   height:40px;
 }
 
-#openModalKeyboard{
-}
 .keyboardButton{
   background-color: rgba(0, 0, 0, 0);
   border:none;
@@ -118,8 +114,6 @@ a:hover {
   height:40px;
 }
 
-#openModalOrange{
-}
 .orangeButton{
   background-color: rgba(0, 0, 0, 0);
   border:none;
@@ -134,24 +128,4 @@ a:hover {
 }
 
 /* Customize Modal Container ---------------------------------------------*/
-
-.modal-content{
-
-}
-
-.modal-header{
-  font-size: 32px;
-  color:blue;
-}
-
-.modal-title{
-
-}
-
-.modal-body{
-
-}
-
-.modalFooter{
-
-}
+/* https://getbootstrap.com/docs/4.1/components/modal/ */
