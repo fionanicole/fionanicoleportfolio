@@ -138,6 +138,7 @@ a:hover {
 .modalHeader{
   color:white;
   font-size: 32px;
+  width: inherit;
   justify-content: center;
 
 }
@@ -170,16 +171,16 @@ iframe{
   border: 1px solid #888;
   width: 80%;
   height:auto;
-  float:left top;
-  overflow:auto;
   z-index: 2;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
 }
 
 .videoClips{
-  width:1080px;
-  height:720px;
+  width:720px;
+  height:480px;
+  justify-content: center;
 }
 
 #modalInteriorVideogame{
@@ -191,21 +192,25 @@ iframe{
   z-index: 2;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
+  text-align:center;
 }
 
 .world{
   width:400px;
   height:400px;
+  justify-content: center;
 }
 .JSON{
   overflow: hidden;
   width:600px;
   height:600px;
+  justify-content: center;
 }
 .sunset{
   position:relative;
   width:600px;
   height:500px;
+  justify-content: center;
 }
 
 #modalInteriorPaintbrush{
@@ -217,7 +222,13 @@ iframe{
   z-index: 2;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
 }
+
+.visualPort{
+  justify-content: center;
+}
+
 #modalInteriorDice{
   display:none;
   background-color: #fefefe;
