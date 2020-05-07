@@ -133,9 +133,82 @@ a:hover {
   height:40px;
 }
 
+/* Customize Modal Container ---------------------------------------------*/
+
+.modal-content{
+
+}
+
+.modal-header{
+  font-size: 32px;
+  color:blue;
+}
+
+.modal-title{
+
+}
+
+.modal-body{
+
+}
+
+.modalFooter{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Modal Interiors--------------------------------------------------------------------------------------------------------------------- */
 
-.modalHeader{
+/* .modalHeader{
   color:white;
   font-size: 32px;
   width: inherit;
@@ -339,7 +412,7 @@ iframe{
   color: #000;
   text-decoration: none;
   cursor: pointer;
-}
+} */
 
 
 /* -------------------------------------------------------------------------------------------------------------------- */
@@ -351,7 +424,7 @@ iframe{
 }
 
 /* Source:https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
-.col-1 {
+/* .col-1 {
   width: 8.33%;
 }
 
@@ -397,4 +470,4 @@ iframe{
 
 .col-12 {
   width: 100%;
-}
+} */
