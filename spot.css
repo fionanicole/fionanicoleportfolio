@@ -44,6 +44,7 @@ a:hover {
 /* For Button Containers---------------------------------------------------------------------------------------------------------------- */
 
 #openModalCamera{
+  display: flex;
 }
 .cameraButton{
   background-color: rgba(0, 0, 0, 0);
@@ -59,6 +60,7 @@ a:hover {
 }
 
 #openModalVideogame{
+  display: flex;
 }
 .gameButton{
   background-color: rgba(0, 0, 0, 0);
@@ -74,6 +76,7 @@ a:hover {
 }
 
 #openModalPaintbrush{
+  display: flex;
 }
 .paintbrushButton{
   background-color: rgba(0, 0, 0, 0);
@@ -88,7 +91,8 @@ a:hover {
   height:40px;
 }
 
-#openModalDice:{
+#openModalDice{
+  display: flex;
 }
 .diceButton{
   background-color: rgba(0, 0, 0, 0);
@@ -104,6 +108,7 @@ a:hover {
 }
 
 #openModalKeyboard{
+  display: flex;
 }
 .keyboardButton{
   background-color: rgba(0, 0, 0, 0);
@@ -119,6 +124,7 @@ a:hover {
 }
 
 #openModalOrange{
+  display: flex;
 }
 .orangeButton{
   background-color: rgba(0, 0, 0, 0);
@@ -242,6 +248,17 @@ iframe{
   height:800px;
 }
 
+#modalInteriorOrange{
+  display:none;
+  background-color: #fefefe;
+  width: 80%;
+  margin: auto;
+  border: 1px solid #888;
+  z-index: 1;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 /* camera */
 #closeModalCamera{
   color: #aaaaaa;
@@ -268,6 +285,12 @@ iframe{
   font-weight: bold;
 }
 #closeModalKeyboard{
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+#closeModalOrange{
   color: #aaaaaa;
   float: right;
   font-size: 28px;
@@ -309,6 +332,13 @@ iframe{
   text-decoration: none;
   cursor: pointer;
 }
+
+#closeModalKeyboard:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 /* -------------------------------------------------------------------------------------------------------------------- */
 @media only screen and (max-width: 768px) {
@@ -365,4 +395,60 @@ iframe{
 
 .col-12 {
   width: 100%;
+}
+
+/* iSpy Menu */
+/* Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #0f1f3d;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav h1{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav ul{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav li{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav h1 {font-size: 18px;}
 }

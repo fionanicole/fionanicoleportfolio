@@ -7,8 +7,9 @@ window.onload=function(){
 var openTheModalCamera = document.getElementById("openModalCamera");
 var openTheModalVideogame = document.getElementById("openModalVideogame");
 var openTheModalCameraPaintbrush = document.getElementById("openModalPaintbrush");
-var openTheModalCameraDice = document.getElementById("openModalDice");
-var openTheModalCameraKeyboard = document.getElementById("openModalKeyboard");
+var openTheModalDice = document.getElementById("openModalDice");
+var openTheModalKeyboard = document.getElementById("openModalKeyboard");
+var openTheModalOrange= document.getElementById("openModalOrange")
 var closeTheModal = document.getElementById("closeModal");
 
 // camera clickers
@@ -30,7 +31,7 @@ document.getElementById("closeModalDice").addEventListener("click", hideContentD
 // Keyboard clickers
 document.getElementById("openModalKeyboard").addEventListener("click", displayContentKeyboard);
 document.getElementById("closeModalKeyboard").addEventListener("click", hideContentKeyboard);
-}
+
 
 // orange clicker
 document.getElementById("openModalOrange").addEventListener("click", displayContentOrange);
@@ -43,15 +44,15 @@ function displayContentCamera(){
   var modalInteriorLayout = document.getElementById("modalInteriorCamera");
   var closeTheModal = document.getElementById("closeModalCamera");
   openTheModal.style.display="none";
-  modalInteriorLayout.style.display="block";
-  closeTheModal.style.display="block";
+  modalInteriorLayout.style.display="flex";
+  closeTheModal.style.display="flex";
 }
 
 function hideContentCamera(){
   var openTheModal = document.getElementById("openModalCamera");
   var modalInteriorLayout = document.getElementById("modalInteriorCamera")
   var closeTheModal = document.getElementById("closeModalCamera");
-  openTheModal.style.display="block";
+  openTheModal.style.display="flex";
   modalInteriorLayout.style.display="none";
   closeTheModal.style.display="none";
 }
@@ -62,15 +63,15 @@ function displayContentVideogame(){
   var modalInteriorLayout = document.getElementById("modalInteriorVideogame");
   var closeTheModal = document.getElementById("closeModalVideogame");
   openTheModal.style.display="none";
-  modalInteriorLayout.style.display="block";
-  closeTheModal.style.display="block";
+  modalInteriorLayout.style.display="flex";
+  closeTheModal.style.display="flex";
 }
 
 function hideContentVideogame(){
   var openTheModal = document.getElementById("openModalVideogame");
   var modalInteriorLayout = document.getElementById("modalInteriorVideogame")
   var closeTheModal = document.getElementById("closeModalVideogame");
-  openTheModal.style.display="block";
+  openTheModal.style.display="flex";
   modalInteriorLayout.style.display="none";
   closeTheModal.style.display="none";
 }
@@ -81,15 +82,15 @@ function displayContentPaintbrush(){
   var modalInteriorLayout = document.getElementById("modalInteriorPaintbrush");
   var closeTheModal = document.getElementById("closeModalPaintbrush");
   openTheModal.style.display="none";
-  modalInteriorLayout.style.display="block";
-  closeTheModal.style.display="block";
+  modalInteriorLayout.style.display="flex";
+  closeTheModal.style.display="flex";
 }
 
 function hideContentPaintbrush(){
   var openTheModal = document.getElementById("openModalPaintbrush");
   var modalInteriorLayout = document.getElementById("modalInteriorPaintbrush")
   var closeTheModal = document.getElementById("closeModalPaintbrush");
-  openTheModal.style.display="block";
+  openTheModal.style.display="flex";
   modalInteriorLayout.style.display="none";
   closeTheModal.style.display="none";
 }
@@ -100,15 +101,15 @@ function displayContentDice(){
   var modalInteriorLayout = document.getElementById("modalInteriorDice");
   var closeTheModal = document.getElementById("closeModalDice");
   openTheModal.style.display="none";
-  modalInteriorLayout.style.display="block";
-  closeTheModal.style.display="block";
+  modalInteriorLayout.style.display="flex";
+  closeTheModal.style.display="flex";
 }
 
 function hideContentDice(){
   var openTheModal = document.getElementById("openModalDice");
   var modalInteriorLayout = document.getElementById("modalInteriorDice")
   var closeTheModal = document.getElementById("closeModalDice");
-  openTheModal.style.display="block";
+  openTheModal.style.display="flex";
   modalInteriorLayout.style.display="none";
   closeTheModal.style.display="none";
 }
@@ -119,15 +120,15 @@ function displayContentKeyboard(){
   var modalInteriorLayout = document.getElementById("modalInteriorKeyboard");
   var closeTheModal = document.getElementById("closeModalKeyboard");
   openTheModal.style.display="none";
-  modalInteriorLayout.style.display="block";
-  closeTheModal.style.display="block";
+  modalInteriorLayout.style.display="flex";
+  closeTheModal.style.display="flex";
 }
 
 function hideContentKeyboard(){
   var openTheModal = document.getElementById("openModalKeyboard");
   var modalInteriorLayout = document.getElementById("modalInteriorKeyboard")
   var closeTheModal = document.getElementById("closeModalKeyboard");
-  openTheModal.style.display="block";
+  openTheModal.style.display="flex";
   modalInteriorLayout.style.display="none";
   closeTheModal.style.display="none";
 }
@@ -138,15 +139,15 @@ function displayContentOrange(){
   var modalInteriorLayout = document.getElementById("modalInteriorKeyboard");
   var closeTheModal = document.getElementById("closeModalKeyboard");
   openTheModal.style.display="none";
-  modalInteriorLayout.style.display="block";
-  closeTheModal.style.display="block";
+  modalInteriorLayout.style.display="flex";
+  closeTheModal.style.display="flex";
 }
 
 function hideContentOrange(){
   var openTheModal = document.getElementById("openModalOrange");
   var modalInteriorLayout = document.getElementById("modalInteriorOrange")
   var closeTheModal = document.getElementById("closeModalOrange");
-  openTheModal.style.display="block";
+  openTheModal.style.display="flex";
   modalInteriorLayout.style.display="none";
   closeTheModal.style.display="none";
 }
