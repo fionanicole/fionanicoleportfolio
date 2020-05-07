@@ -148,6 +148,7 @@ body {
   transition: 0.3s;
   height:100vh;
   overflow-y: hidden;
+  margin:20px;
 }
 
 .sidenav .closebtn {
@@ -157,6 +158,41 @@ body {
   font-size: 36px;
   margin-left: 50px;
 }
+
+.sidenav2 {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  overflow-y: hidden;
+}
+
+.sidenav2 p {
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  height:100vh;
+  overflow-y: hidden;
+  margin:20px;
+}
+
+.sidenav2 .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 40px;
+  margin-left: 50px;
+}
+
+
+
 
 
 /* Customize Modal Container ---------------------------------------------*/

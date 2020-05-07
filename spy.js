@@ -39,35 +39,21 @@ $(document).ready(function(){
   });
 });
 
-var $el = $("#allObjectButtons");
-var elHeight = $el.outerHeight();
-var elWidth = $el.outerWidth();
 
-var $wrapper = $("#scaleable-wrapper");
+// Tabs on both sides
 
-$wrapper.resizable({
-  resize: doResize
-});
-
-function doResize(event, ui) {
-
-  var scale, origin;
-
-  scale = Math.min(
-    ui.size.width / elWidth,
-    ui.size.height / elHeight
-  );
-
-  $el.css({
-    transform: "translate(-50%, -50%) " + "scale(" + scale + ")"
-  });
-
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
 }
 
-var starterData = {
-  size: {
-    width: $wrapper.width(),
-    height: $wrapper.height()
-  }
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
 }
-doResize(null, starterData);
+
+function openNav2() {
+  document.getElementById("mySidenav2").style.width = "250px";
+}
+
+function closeNav2() {
+  document.getElementById("mySidenav2").style.width = "0";
+}
