@@ -1,0 +1,266 @@
+
+/* Modal Interiors--------------------------------------------------------------------------------------------------------------------- */
+
+.modalHeader{
+  color:white;
+  font-size: 32px;
+  width: inherit;
+  justify-content: center;
+
+}
+
+.decorativeSpacers{
+  background-color: pinks;
+  margin:20px;
+  width:75vw;
+  height:20px;
+}
+
+.modalWritingBoxes{
+  border-color: white;
+  border-width: thin;
+  width:300px;
+  height:300px;
+}
+
+iframe{
+  width:inherit;
+  height: inherit;
+  overflow:hidden;
+}
+
+
+#modalInteriorCamera{
+  display:none;
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  width: 80%;
+  height:auto;
+  z-index: 2;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.videoClips{
+  width:720px;
+  height:480px;
+  justify-content: center;
+}
+
+#modalInteriorVideogame{
+  display:none;
+  background-color: #fefefe;
+  width: 80%;
+  margin: auto;
+  border: 1px solid #888;
+  z-index: 2;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align:center;
+}
+
+.world{
+  width:400px;
+  height:400px;
+  justify-content: center;
+}
+.JSON{
+  overflow: hidden;
+  width:600px;
+  height:600px;
+  justify-content: center;
+}
+.sunset{
+  position:relative;
+  width:600px;
+  height:500px;
+  justify-content: center;
+}
+
+#modalInteriorPaintbrush{
+  display:none;
+  background-color: #fefefe;
+  width: 80%;
+  margin: auto;
+  border: 1px solid #888;
+  z-index: 2;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.visualPort{
+  justify-content: center;
+}
+
+#modalInteriorDice{
+  display:none;
+  background-color: #fefefe;
+  width: 80%;
+  margin: auto;
+  border: 1px solid #888;
+  z-index: 2;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#modalInteriorKeyboard{
+  display:none;
+  background-color: #fefefe;
+  width: 90%;
+  margin: auto;
+  border: 1px solid #888;
+  z-index: 2;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.objectmed{
+  width:1050px;
+  height:800px;
+}
+
+#modalInteriorOrange{
+  display:none;
+  background-color: #fefefe;
+  width: 80%;
+  margin: auto;
+  border: 1px solid #888;
+  z-index: 2;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* camera */
+#closeModalCamera{
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+#closeModalVideogame{
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+#closeModalPaintbrush{
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+#closeModalDice{
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+#closeModalKeyboard{
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+#closeModalOrange{
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#closeModalCamera:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#closeModalVideogame:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#closeModalPaintbrush:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#closeModalDice:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#closeModalKeyboard:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#closeModalKeyboard:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+} */
+
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: Galaxy S5, iPhone X, and iPhone 6/7/8 Portrait modes */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+/* Source:https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
