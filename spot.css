@@ -137,6 +137,7 @@ body {
   background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
+  overflow-y: hidden;
 }
 
 .sidenav p {
@@ -146,6 +147,7 @@ body {
   display: block;
   transition: 0.3s;
   height:100vh;
+  overflow-y: hidden;
 }
 
 .sidenav .closebtn {
