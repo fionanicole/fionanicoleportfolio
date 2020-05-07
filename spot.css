@@ -25,14 +25,14 @@ body {
 
 /*------------------------------------------------------------------------------------------------------------- */
 .mainText {
-  color: white;
+  color: #b3d9ff;
   font-family: 'Roboto Mono', monospace;
   display: flex;
   font-size: 50px;
   justify-content: center;
   align-content: center;
   float: top center;
-  transform: translate(33%);
+  transform: translate(35%);
   z-index: 3;
 }
 
@@ -227,13 +227,38 @@ iframe{
   text-decoration: none;
   font-family: 'Roboto Mono', monospace;
   font-size: 25px;
-  color: #818181;
+  color: #cce6ff;
   display: block;
   transition: 0.3s;
   height: 100vh;
   overflow-y: hidden;
   margin: 20px;
 }
+
+.sidenav ul {
+  /* text-decoration: none; */
+  font-family: 'Roboto Mono', monospace;
+  font-size: 25px;
+  color: #cce6ff;
+  display: block;
+  transition: 0.3s;
+  height: 100vh;
+  overflow-y: hidden;
+  margin: 20px;
+}
+
+.sidenav li {
+  /* text-decoration: none; */
+  font-family: 'Roboto Mono', monospace;
+  font-size: 25px;
+  color: #cce6ff;
+  display: block;
+  transition: 0.3s;
+  height: 100vh;
+  overflow-y: hidden;
+  margin: 20px;
+}
+
 
 .sidenav .closebtn {
   position: absolute;
@@ -264,7 +289,7 @@ iframe{
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #111;
+  background-color: #cce6ff;
   overflow-x: hidden;
   transition: 0.5s;
   overflow-y: hidden;
@@ -273,7 +298,7 @@ iframe{
 .sidenav2 p {
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #cce6ff
   display: block;
   transition: 0.3s;
   height: 100vh;
