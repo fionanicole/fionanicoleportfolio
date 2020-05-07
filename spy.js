@@ -32,6 +32,11 @@ document.getElementById("openModalKeyboard").addEventListener("click", displayCo
 document.getElementById("closeModalKeyboard").addEventListener("click", hideContentKeyboard);
 }
 
+// orange clicker
+document.getElementById("openModalOrange").addEventListener("click", displayContentOrange);
+document.getElementById("closeModalOrange").addEventListener("click", hideContentOrange);
+}
+
 // camera displays
 function displayContentCamera(){
   var openTheModal = document.getElementById("openModalCamera");
@@ -122,6 +127,25 @@ function hideContentKeyboard(){
   var openTheModal = document.getElementById("openModalKeyboard");
   var modalInteriorLayout = document.getElementById("modalInteriorKeyboard")
   var closeTheModal = document.getElementById("closeModalKeyboard");
+  openTheModal.style.display="block";
+  modalInteriorLayout.style.display="none";
+  closeTheModal.style.display="none";
+}
+
+// orange
+function displayContentOrange(){
+  var openTheModal = document.getElementById("openModalKeyboard");
+  var modalInteriorLayout = document.getElementById("modalInteriorKeyboard");
+  var closeTheModal = document.getElementById("closeModalKeyboard");
+  openTheModal.style.display="none";
+  modalInteriorLayout.style.display="block";
+  closeTheModal.style.display="block";
+}
+
+function hideContentOrange(){
+  var openTheModal = document.getElementById("openModalOrange");
+  var modalInteriorLayout = document.getElementById("modalInteriorOrange")
+  var closeTheModal = document.getElementById("closeModalOrange");
   openTheModal.style.display="block";
   modalInteriorLayout.style.display="none";
   closeTheModal.style.display="none";

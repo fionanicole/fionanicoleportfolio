@@ -1,16 +1,9 @@
 body {
   background-color: #254da8;
-  background-image: url("ispy_background.png");
+  background-image: url("ispy_finished2.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-
-/* img{
-  width:inherit;
-  height:inherit;
-
-} */
 
 .containObjects{
   width:100vw;
@@ -50,38 +43,103 @@ a:hover {
 
 /* For Button Containers---------------------------------------------------------------------------------------------------------------- */
 
-.gamecontrolbutton{
-background-image: url("game-controller.png");
-width:100px;
-height:100px;
-}
-.gamecontrolbutton:active  /* use Dot here */
-{
-    background:url("game-controller.png") no-repeat;
-}
-
-
-
-
-
-
-
-/* For Modal Popups------------------------------------------------------------------------------------------------------------------- */
-
 #openModalCamera{
-  display: flex;
 }
+.cameraButton{
+  background-color: rgba(0, 0, 0, 0);
+  border:none;
+  width:80px;
+  height:40px;
+}
+.cameraButton:hover{
+  background:url("camera-button.svg") no-repeat;
+  border:none;
+  width:80px;
+  height:40px;
+}
+
 #openModalVideogame{
-  display:flex;
 }
+.gameButton{
+  background-color: rgba(0, 0, 0, 0);
+  border:none;
+  width:80px;
+  height:40px;
+}
+.gameButton:hover{
+  background:url("game-button.svg") no-repeat;
+  border:none;
+  width:80px;
+  height:40px;
+}
+
 #openModalPaintbrush{
-  display: flex;
 }
-#openModalDice{
-  display: flex;
+.paintbrushButton{
+  background-color: rgba(0, 0, 0, 0);
+  border:none;
+  width:80px;
+  height:40px;
 }
+.paintbrushButton:hover{
+  background:url("paintbrush-button.svg") no-repeat;
+  border:none;
+  width:80px;
+  height:40px;
+}
+
+#openModalDice:{
+}
+.diceButton{
+  background-color: rgba(0, 0, 0, 0);
+  border:none;
+  width:80px;
+  height:40px;
+}
+.diceButton:hover{
+  background:url("dice-button.svg") no-repeat;
+  border:none;
+  width:80px;
+  height:40px;
+}
+
 #openModalKeyboard{
-  display: flex;
+}
+.keyboardButton{
+  background-color: rgba(0, 0, 0, 0);
+  border:none;
+  width:80px;
+  height:40px;
+}
+.keyboardButton:hover{
+  background:url("keyboard-button.svg") no-repeat;
+  border:none;
+  width:80px;
+  height:40px;
+}
+
+#openModalOrange{
+}
+.orangeButton{
+  background-color: rgba(0, 0, 0, 0);
+  border:none;
+  width:80px;
+  height:40px;
+}
+.orangeButton:hover{
+  background:url("orange-button.svg") no-repeat;
+  border:none;
+  width:80px;
+  height:40px;
+}
+
+/* Modal Interiors--------------------------------------------------------------------------------------------------------------------- */
+
+.modalHeader{
+  color:white;
+  font-size: 32px;
+  justify-content: center;
+
 }
 
 .decorativeSpacers{
@@ -260,13 +318,6 @@ iframe{
   }
 }
 
-.temporaryButtonAlign{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
-  justify-content: space-around;
-}
 /* Source:https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
 .col-1 {
   width: 8.33%;

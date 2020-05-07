@@ -16,28 +16,28 @@
 
 <body>
 
-  <img src="ispy_objects.png" class="containObjects">
-
   <h1 class='mainText col-4'><a href="https://github.com/fionanicole/fionanicoleportfolio"> @fionanicole </a></h1>
 
   <!-- Create button that redirects to modal -->
 
-  <div class="temporaryButtonAlign">
-    <button id="openModalCamera">Model Opener Camera</button>
-    <button id="openModalVideogame" class="gamecontrolbutton"></button>
-    <button id="openModalPaintbrush">Modal Opener Paintbrush</button>
-    <button id="openModalDice">Modal Opener</button>
-    <button id="openModalKeyboard">Modal Opener</button>
-  </div>
+    <button id="openModalCamera" class="cameraButton"></button>
+    <button id="openModalVideogame" class="gameButton"></button>
+    <button id="openModalPaintbrush" class="paintbrushButton"></button>
+    <button id="openModalOrange" class="orangeButton"></button>
+    <button id="openModalDice" class="diceButton"></button>
+    <button id="openModalKeyboard" class="keyboardButton"></button>
+
 
 
   <!-- Create modal content -->
 
   <div id="modalInteriorCamera">
-    <p>Content In Modal Camera</p>
+    <h1 class="modalHeader">Video and Film Work</h1>
+    <div class="decorativeSpacers"></div>
     <button id="closeModalCamera">X</button>
-    <img src="blue-girl.png"></img>
     <iframe class="videoClips" src="https://www.youtube.com/embed/c7G3kvEPfLA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="decorativeSpacers"></div>
+    <iframe class="videoClips" src="https://www.youtube.com/embed/hJVP_htrRsI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div class="modalWritingBoxes">This is a video video yeah!</div>
   </div>
 
@@ -58,26 +58,24 @@
     <div class="decorativeSpacers"></div>
   </div>
 
-
   </div>
 
   <div id="modalInteriorPaintbrush">
+    <button id="closeModalPaintbrush">X</button>
     <p>Content In Modal Paintbrush</p>
-    <button id="closeModalPaintbrush">Close Modal Content</button>
-
   </div>
 
   <div id="modalInteriorDice">
+    <button id="closeModalDice">X</button>
     <p>Content In Modal Dice</p>
-    <button id="closeModalDice">Close Modal Content</button>
   </div>
 
   <div id="modalInteriorKeyboard">
+    <button id="closeModalKeyboard">X</button>
     <p>Content In Modal Keyboard</p>
     <iframe class="objectmed" src="https://fionanicole.github.io/web-nyu-idm/object-meditation/"></iframe>
     <iframe class="objectmed" src="https://fionanicole.github.io/cori-vera/Cori_Vera-Fionas_first_visual_novel/"></iframe>
-    <button id="closeModalKeyboard">Close Modal Content</button>
-    </img>
+
 
 
 </body>
