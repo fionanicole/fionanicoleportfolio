@@ -135,9 +135,9 @@ function hideContentKeyboard(){
 
 // orange
 function displayContentOrange(){
-  var openTheModal = document.getElementById("openModalKeyboard");
-  var modalInteriorLayout = document.getElementById("modalInteriorKeyboard");
-  var closeTheModal = document.getElementById("closeModalKeyboard");
+  var openTheModal = document.getElementById("openModalOrange");
+  var modalInteriorLayout = document.getElementById("modalInteriorOrange");
+  var closeTheModal = document.getElementById("closeModalOrange");
   openTheModal.style.display="none";
   modalInteriorLayout.style.display="flex";
   closeTheModal.style.display="flex";
