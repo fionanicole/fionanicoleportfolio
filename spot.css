@@ -6,14 +6,14 @@ body {
   position: fixed;
 }
 
-.containObjects{
+/* .containObjects{
   width:100vw;
   height:100vh;
   float:left;
   z-index: -1;
   position:fixed;
   transform: translate(-0.75%,0%);
-}
+} */
 
 /* For my github website------------------------------------------------------------------------------------------------------------- */
 .mainText {
@@ -29,8 +29,6 @@ body {
 
 
 .cameraButton{
-  /* position: sticky;
-  position: relative; */
   background-color: rgba(0, 0, 0, 0);
   border:none;
   width:220px;
@@ -39,7 +37,6 @@ body {
 
 }
 .cameraButton:hover{
-  /* position: relative; */
   background:url("camera-button.svg") no-repeat;
   border:none;
   width:220px;
@@ -48,7 +45,6 @@ body {
 }
 
 .gameButton{
-  /* position: relative; */
   background-color: rgba(0, 0, 0, 0);
   border:none;
   width:250px;
@@ -56,7 +52,6 @@ body {
   transform:translate(290px,20px);
 }
 .gameButton:hover{
-  /* position: relative; */
   background:url("game-button.svg") no-repeat;
   border:none;
   width:250px;
@@ -65,7 +60,6 @@ body {
 }
 
 .paintbrushButton{
-  /* position: relative; */
   background-color: rgba(0, 0, 0, 0);
   border:none;
   width:250px;
@@ -73,7 +67,6 @@ body {
   transform: translate(580px,-260px);
 }
 .paintbrushButton:hover{
-  /* position: relative; */
   background:url("paintbrush-button.svg") no-repeat;
   border:none;
   width:250px;
@@ -82,7 +75,6 @@ body {
 }
 
 .diceButton{
-  /* position: relative; */
   background-color: rgba(0, 0, 0, 0);
   border:none;
   width:100px;
@@ -126,7 +118,11 @@ body {
 }
 
 /* Sidenavigator Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav */
-
+.dashed{
+  font-size:45px;
+  cursor:pointer;
+  float: left;
+}
 .sidenav {
   height: 100%;
   width: 0;
@@ -155,8 +151,14 @@ body {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
+  font-size: 45px;
   margin-left: 50px;
+}
+
+.dashed2{
+  font-size:45px;
+  cursor:pointer;
+  float:right;
 }
 
 .sidenav2 {
@@ -186,8 +188,8 @@ body {
 .sidenav2 .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
-  font-size: 40px;
+  left: 25px;
+  font-size: 45px;
   margin-left: 50px;
 }
 
