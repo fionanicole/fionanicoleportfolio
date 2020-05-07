@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="spot.css">
-  <link rel="stylesheet" type="text/css" href="sidebar.css">
   <script language="JavaScript" src="spy.js"></script>
   <script language="JavaScript" src="sidebar.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -15,175 +14,210 @@
 </head>
 
 <body>
-<!-- MAJOR Source: https://getbootstrap.com/docs/4.1/components/modal/ -->
 
-<!-- CAMERA ______________________________________________________________________________________________________________________ -->
-  <div class="container">
-  <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-info btn-lg cameraButton" id="cameraModal"></button>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 
-  <!-- Modal -->
-  <div class="modal fade" id="myCameraModal" role="dialog">
-    <div class="modal-dialog modal-xl">
-
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Video and Film Work</h4>
-        </div>
-        <div class="modal-body">
-          <div class="decorativeSpacers"></div>
-          <div class="videoClips">
-          <iframe src="https://www.youtube.com/embed/c7G3kvEPfLA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-          <div class="decorativeSpacers"></div>
-          <div class="videoClips">
-          <iframe src="https://www.youtube.com/embed/hJVP_htrRsI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-
-    </div>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
   </div>
 
-<!-- VIDEOGAME ____________________________________________________________________________________________________________-->
-  <div class="container">
-  <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-info btn-lg gameButton" id="videogameModal"></button>
-  <!-- Modal -->
-  <div class="modal fade" id="myVideogameModal" role="dialog">
-    <div class="modal-dialog modal-xl">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Creative Coding Work</h4>
-        </div>
-        <div class="modal-body">
-          <div>
-            <iframe class="world" src="https://editor.p5js.org/fiona-nicole/embed/77gb63Lhp"></iframe>
-            <p>This is the Earth. Created in P5JS as part of Creative Coding @ NYUIDM</p>
-          </div>
-          <div class="decorativeSpacers"></div>
-          <div>
-            <iframe class="JSON" src="https://editor.p5js.org/fiona-nicole/embed/r9vAznDNF"></iframe>
-          </div>
-          <div class="decorativeSpacers"></div>
-          <div>
-            <img class="sunset" src="sunset.gif"></img>
-          </div>
-          <div class="decorativeSpacers"></div>
-        </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
+  <!-- Source for scaling techniquehttps://css-tricks.com/scaled-proportional-blocks-with-css-and-javascript/ -->
+  <div class="scaleable-wrapper" id="scaleable-wrapper">
+    <!-- MAJOR Source: https://getbootstrap.com/docs/4.1/components/modal/ -->
 
-    </div>
-  </div>
-
-
-  <!-- PAINTBRUSH-_____________________________________________________________________________________________________________ -->
+    <!-- CAMERA ______________________________________________________________________________________________________________________ -->
     <div class="container">
-    <!-- Trigger the modal with a button -->
-    <button type="button" class="btn btn-info btn-lg paintbrushButton" id="paintbrushModal"></button>
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="btn btn-info btn-lg cameraButton" id="cameraModal"></button>
 
-    <!-- Modal -->
-    <div class="modal fade" id="myPaintbrushModal" role="dialog">
-      <div class="modal-dialog modal-xl">
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Artwork and Graphic Design</h4>
-          </div>
-          <div class="modal-body">
-            <div class"visualPort">
-              <img src="portfolio-content/vfs-portfolio-01.png"></img>
+      <!-- Modal -->
+      <div class="modal fade" id="myCameraModal" role="dialog">
+        <div class="modal-dialog modal-xl">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Video and Film Work</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
-            <div class"visualPort">
-              <img src="portfolio-content/vfs-portfolio-02.png"></img>
-              <img src="portfolio-content/vfs-portfolio-03.png"></img>
+            <div class="modal-body">
+              <div class="decorativeSpacers"></div>
+              <div class="videoClips">
+                <iframe src="https://www.youtube.com/embed/c7G3kvEPfLA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="decorativeSpacers"></div>
+              <div class="videoClips">
+                <iframe src="https://www.youtube.com/embed/hJVP_htrRsI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+
+      <!-- VIDEOGAME ____________________________________________________________________________________________________________-->
+      <div class="container">
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg gameButton" id="videogameModal"></button>
+        <!-- Modal -->
+        <div class="modal fade" id="myVideogameModal" role="dialog">
+          <div class="modal-dialog modal-xl">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Creative Coding Work</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div>
+                  <iframe class="world" src="https://editor.p5js.org/fiona-nicole/embed/77gb63Lhp"></iframe>
+                  <p>This is the Earth. Created in P5JS as part of Creative Coding @ NYUIDM</p>
+                </div>
+                <div class="decorativeSpacers"></div>
+                <div>
+                  <iframe class="JSON" src="https://editor.p5js.org/fiona-nicole/embed/r9vAznDNF"></iframe>
+                </div>
+                <div class="decorativeSpacers"></div>
+                <div>
+                  <img class="sunset" src="sunset.gif"></img>
+                </div>
+                <div class="decorativeSpacers"></div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- PAINTBRUSH-_____________________________________________________________________________________________________________ -->
+      <div class="container">
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg paintbrushButton" id="paintbrushModal"></button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myPaintbrushModal" role="dialog">
+          <div class="modal-dialog modal-xl">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Artwork and Graphic Design</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class"visualPort">
+                  <img src="portfolio-content/vfs-portfolio-01.png"></img>
+                </div>
+                <div class"visualPort">
+                  <img src="portfolio-content/vfs-portfolio-02.png"></img>
+                  <img src="portfolio-content/vfs-portfolio-03.png"></img>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
           </div>
         </div>
 
-      </div>
-    </div>
+        <!-- DICE ________________________________________________________________________________________________________________________ -->
+        <div class="container">
+          <!-- Trigger the modal with a button -->
+          <button type="button" class="btn btn-info btn-lg diceButton" id="diceModal"></button>
 
-<!-- DICE ________________________________________________________________________________________________________________________ -->
-<div class="container">
-<!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg diceButton" id="diceModal"></button>
+          <!-- Modal -->
+          <div class="modal fade" id="myDiceModal" role="dialog">
+            <div class="modal-dialog modal-xl">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">My Inspirations For Some of My Work</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-<!-- Modal -->
-<div class="modal fade" id="myDiceModal" role="dialog">
-  <div class="modal-dialog modal-xl">
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title">My Inspirations For Some of My Work</h4>
-      </div>
-      <div class="modal-body">
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+            <!-- KEYBOARD _____________________________________________________________________________________________________________________ -->
+            <div class="container">
+              <!-- Trigger the modal with a button -->
+              <button type="button" class="btn btn-info btn-lg keyboardButton" id="keyboardModal"></button>
 
-<!-- KEYBOARD _____________________________________________________________________________________________________________________ -->
-<div class="container">
-<!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg keyboardButton" id="keyboardModal"></button>
+              <!-- Modal -->
+              <div class="modal fade" id="myKeyboardModal" role="dialog">
+                <div class="modal-dialog modal-xl">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Web Development Work</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <iframe class="objectmed" src="https://fionanicole.github.io/web-nyu-idm/object-meditation/"></iframe>
+                    <iframe class="objectmed" src="https://fionanicole.github.io/cori-vera/Cori_Vera-Fionas_first_visual_novel/"></iframe>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-<!-- Modal -->
-<div class="modal fade" id="myKeyboardModal" role="dialog">
-  <div class="modal-dialog modal-xl">
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title">Web Development Work</h4>
-      </div>
-      <iframe class="objectmed" src="https://fionanicole.github.io/web-nyu-idm/object-meditation/"></iframe>
-      <iframe class="objectmed" src="https://fionanicole.github.io/cori-vera/Cori_Vera-Fionas_first_visual_novel/"></iframe>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+              <!-- ORANGE ____________________________________________________________________________________________________________________ -->
+              <div class="container">
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-lg orangeButton" id="orangeModal"></button>
 
-<!-- ORANGE ____________________________________________________________________________________________________________________ -->
-<div class="container">
-<!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg orangeButton" id="orangeModal"></button>
+                <!-- Modal -->
+                <div class="modal fade" id="myOrangeModal" role="dialog">
+                  <div class="modal-dialog modal-xl">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">More About Me!</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-<!-- Modal -->
-<div class="modal fade" id="myOrangeModal" role="dialog">
-  <div class="modal-dialog modal-xl">
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title">More About Me!</h4>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+                <script src="spy.js"></script>
 
-  <script src="spy.js"></script>
+                <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+              </div>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+            </div>
+
 </body>
 
 </html>
