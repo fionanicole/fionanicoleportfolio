@@ -25,12 +25,19 @@ body {
 
 /*------------------------------------------------------------------------------------------------------------- */
 .mainText {
-  color: #FF5C99;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
   display: flex;
   font-size: 50px;
   justify-content: center;
   align-content: center;
-  z-index: 1;
+  float: top center;
+  transform: translate(33%);
+  z-index: 3;
+}
+
+.mainText:hover{
+  color:#001a4d;
 }
 
 iframe{
@@ -51,7 +58,7 @@ iframe{
   width: 220px;
   height: 220px;
   z-index: 3;
-  transform:translate(340px,370px);
+  transform:translate(340px,330px);
 }
 
 .cameraButton:hover {
@@ -62,7 +69,7 @@ iframe{
   width: 220px;
   height: 220px;
   z-index: 3;
-  transform:translate(340px,370px);
+  transform:translate(340px,330px);
 }
 
 .videoClips{
@@ -77,7 +84,7 @@ iframe{
   width: 250px;
   height: 250px;
   z-index: 4;
-  transform:translate(410px,-50px);
+  transform:translate(410px,-90px);
 }
 
 .gameButton:hover {
@@ -86,7 +93,7 @@ iframe{
   width: 250px;
   height: 250px;
   z-index: 4;
-  transform:translate(410px,-50px);
+  transform:translate(410px,-90px);
 }
 
 .world{
@@ -113,7 +120,7 @@ iframe{
   width: 250px;
   height: 250px;
   z-index: 5;
-  transform: translate(685px,-330px);
+  transform: translate(685px,-380px);
 }
 
 .paintbrushButton:hover {
@@ -122,7 +129,7 @@ iframe{
   width: 250px;
   height: 250px;
   z-index: 5;
-  transform: translate(685px,-330px);
+  transform: translate(685px,-380px);
 }
 
 .visualPort{
@@ -153,7 +160,7 @@ iframe{
   width: 500px;
   height: 500px;
   z-index: 7;
-  transform: translate(570px, -190px);
+  transform: translate(570px, -240px);
 }
 
 .keyboardButton:hover {
@@ -162,7 +169,7 @@ iframe{
   width: 500px;
   height: 500px;
   z-index: 7;
-  transform: translate(570px, -190px);
+  transform: translate(570px, -240px);
 }
 
 .objectmed{
@@ -195,6 +202,12 @@ iframe{
   cursor: pointer;
   float: left;
   font-family: 'Roboto Mono', monospace;
+  color:black;
+  text-shadow: #001a4d 2px 2px;
+}
+
+.dashed:hover{
+  color:lightblue;
 }
 
 .sidenav {
@@ -236,6 +249,12 @@ iframe{
   float: right;
   transform: translate(750px);
   font-family: 'Roboto Mono', monospace;
+  color:black;
+  text-shadow: #001a4d 2px 2px;
+}
+
+.dashed2:hover{
+  color:lightblue;
 }
 
 .sidenav2 {
@@ -259,7 +278,7 @@ iframe{
   transition: 0.3s;
   height: 100vh;
   overflow-y: hidden;
-  margin: 20px;
+  margin: 40px;
 }
 
 .sidenav2 .closebtn {

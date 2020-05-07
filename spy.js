@@ -50,7 +50,7 @@ function closeNav() {
 }
 
 function openNav2() {
-  document.getElementById("mySidenav2").style.width = "250px";
+  document.getElementById("mySidenav2").style.width = "390px";
 }
 
 function closeNav2() {
