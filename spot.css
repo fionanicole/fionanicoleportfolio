@@ -25,14 +25,14 @@ body {
 
 /*------------------------------------------------------------------------------------------------------------- */
 .mainText {
-  color: #b3d9ff;
+  color: white;
   font-family: 'Corben', cursive;
   display: flex;
   font-size: 50px;
   justify-content: center;
   align-content: center;
   float: top center;
-  transform: translate(30%);
+  transform: translate(30%,30%);
   z-index: 3;
 }
 
@@ -203,11 +203,12 @@ iframe{
   float: left;
   font-family: 'Roboto Mono', monospace;
   color:black;
-  text-shadow: #001a4d 2px 2px;
+  background-color: #66b5ff;
 }
 
 .dashed:hover{
   color:lightblue;
+  background-color: black;
 }
 
 .sidenav {
@@ -252,11 +253,12 @@ iframe{
   transform: translate(700px);
   font-family: 'Roboto Mono', monospace;
   color:black;
-  text-shadow: #001a4d 2px 2px;
+  background-color: #66b5ff;
 }
 
 .dashed2:hover{
   color:lightblue;
+  background-color: black;
 }
 
 .sidenav2 {
