@@ -41,7 +41,7 @@ body {
   width: 220px;
   height: 220px;
   z-index: 3;
-  transform:translate(220px,430px);
+  transform:translate(300px,430px);
 }
 
 .cameraButton:hover {
@@ -51,7 +51,7 @@ body {
   width: 220px;
   height: 220px;
   z-index: 3;
-  transform:translate(220px,430px);
+  transform:translate(300px,430px);
 }
 
 .gameButton {
@@ -61,7 +61,7 @@ body {
   width: 250px;
   height: 250px;
   z-index: 4;
-  transform:translate(290px,20px);
+  transform:translate(410px,20px);
 }
 
 .gameButton:hover {
@@ -70,7 +70,7 @@ body {
   width: 250px;
   height: 250px;
   z-index: 4;
-  transform:translate(290px,20px);
+  transform:translate(410px,20px);
 }
 
 .paintbrushButton {
