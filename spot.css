@@ -23,7 +23,7 @@ body {
   flex-flow: row;
 }
 
-/* For my github website------------------------------------------------------------------------------------------------------------- */
+/*------------------------------------------------------------------------------------------------------------- */
 .mainText {
   color: #FF5C99;
   display: flex;
@@ -33,6 +33,15 @@ body {
   z-index: 1;
 }
 
+iframe{
+  width:inherit;
+  height:inherit;
+}
+
+.decorativeSpacers{
+  width:inherit;
+  height:40px;
+}
 /* For Button Containers---------------------------------------------------------------------------------------------------------------- */
 .cameraButton {
   display:flex;
@@ -54,6 +63,11 @@ body {
   transform:translate(300px,430px);
 }
 
+.videoClips{
+  width:720px;
+  height:480px;
+}
+
 .gameButton {
   display:flex;
   background-color: rgba(0, 0, 0, 0);
@@ -73,6 +87,24 @@ body {
   transform:translate(410px,20px);
 }
 
+.world{
+  width:400px;
+  height:400px;
+  justify-content: center;
+}
+.JSON{
+  overflow: hidden;
+  width:600px;
+  height:600px;
+  justify-content: center;
+}
+.sunset{
+  position:relative;
+  width:600px;
+  height:500px;
+  justify-content: center;
+}
+
 .paintbrushButton {
   background-color: rgba(0, 0, 0, 0);
   border: none;
@@ -89,6 +121,10 @@ body {
   height: 250px;
   z-index: 5;
   transform: translate(685px,-260px);
+}
+
+.visualPort{
+  justify-content: center;
 }
 
 .diceButton {
@@ -126,6 +162,12 @@ body {
   z-index: 7;
   transform: translate(570px, -130px);
 }
+
+.objectmed{
+  width:1050px;
+  height:800px;
+}
+
 
 .orangeButton {
   background-color: rgba(0, 0, 0, 0);
